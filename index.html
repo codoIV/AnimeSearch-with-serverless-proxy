@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="anime_style.css">
+        <title>My Website</title>
+        <script src="logic.js?v=3" defer></script>
+    </head>
+    <body>
+        <div class="content-box">
+            <h1>AnimeSearch</h1>
+            <!-- <p>Try resizing your browser window! On large screens, this content stays locked in the center at a maximum width of 1200px. On smaller mobile screens, the margins disappear and the padding keeps it safe from clipping against the glass edges.</p> -->
+            <input type="text" class="input" id="anime-search-input" placeholder="Search for an anime...">
+        </div>
+
+        <div id="anime-card" class="hidden">
+            <h1 id="anime-title"></h1>
+            <img id="anime-cover" src="" alt="Anime Cover">
+            <div id="anime-details">
+                <p><strong>Version:</strong> <select id="anime-related-select" class="hidden"></select></p>
+                <p><strong>Genre:</strong> <span id="anime-genres"></span></p>
+                <p><strong>Studio:</strong> <span id="anime-studios"></span></p>
+                <p><strong>Score:</strong> <span id="anime-score"></span></p>
+            </div>
+        </div>
+    </body>
+</html>
